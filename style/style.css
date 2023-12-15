@@ -6,7 +6,7 @@ body {
 header {
     /* height: 109px; */            /* автоматически высота 105px. Через какое свойство указать высоту в 109px? */ 
     max-width: 1440px;
-    padding: 90px 50px;
+    padding: 92px 50px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 148px 1fr;
@@ -92,7 +92,7 @@ main {
     max-width: 1440px;
     margin: 0 auto;
 }
-.jambotron {
+.banner {
     background-image: url(./images/lotus_flower.png);
     background-color: darkcyan;
     background-repeat: no-repeat;
@@ -110,30 +110,183 @@ main {
     z-index: 1;
 }
 
-.jambotron__title {
-    padding: 165px 50px 237px;
+.banner__title {
+    padding: 165px 50px 0;
     width: 100%;
     color: #fff;
     font-family: "Raleway", sans-serif;
     font-size: 100px;
     font-style: normal;
     font-weight: 700;
-    line-height: 115px;
+    line-height: 100px;
     letter-spacing: 30px;
     text-transform: uppercase;
     z-index: 2;
 }
 
+.line-height_115px {
+    line-height: 115px;
+}
 .accent-span {
-    display: block;
-    word-spacing: -23px;
+    display: flex;
+}
+
+.aligned-text {
+    text-align: start;
 }
 
 .aligned-text_center {
+    justify-content: center;
     text-align: center;
-    margin: 20px 60px 20px 0;
+    padding: 20px 0;
 }
 
 .aligned-text_right {
+    justify-content: end;
     text-align: right;
+}
+
+.letter-spacing_60px {
+    letter-spacing: 60px;
+}
+
+.letter-spacing_30px {
+    letter-spacing: 30px;
+}
+.letter-spacing_0px {
+    letter-spacing: 0px;
+}
+
+.banner__footer {
+    display: flex;
+    /* width: 100%; */
+    height: 52px;
+    margin: 135px 50px 50px auto;
+    justify-content: end;
+    align-items: baseline;
+    gap: 78px;
+}
+
+.banner__button {
+    background: transparent;
+    width: 257px;
+    height: 52px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.banner__description {
+    display: inline-block;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    word-spacing: 17px;
+}
+
+.word-spacing_16px {
+    word-spacing: 16px;
+}
+
+.word-spacing_24px {
+    word-spacing: 24px;
+}
+
+.lots {
+    margin: 180px 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.lots__heading {
+    margin-left: 40px;
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.lots__card-list {
+    margin-top: 27px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.lots__card-list-item {
+    list-style: none;
+}
+
+.card {
+    width: 430px;
+    height: 450px;
+    flex-shrink: 0;
+}
+.card__text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+.card__title {
+    padding: 50px 40px 0;
+    color: #FFF;
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 26.4px */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.card__text {
+    padding: 0 40px 50px;
+    color: #FFF;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+}
+
+.card_type_film {
+    background-image: url(./images/card_1.png);
+    background-color: darkolivegreen;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card_type_book {
+    background-image: url(./images/card_2.jpg);
+    background-color: darkred;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card_type_picture {
+    background-image: url(./images/card_3.png);
+    background-color: darkgoldenrod;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
