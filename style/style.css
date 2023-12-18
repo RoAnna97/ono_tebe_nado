@@ -17,6 +17,13 @@ header {
     display: grid;
     grid-column: 1/2;
     place-content: center start;
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    line-height: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .header__logo {
@@ -361,4 +368,81 @@ main {
     font-weight: 400;
     line-height: normal;
     line-height: 23px;
-    }
+}
+
+footer {
+    max-width: 1440px;
+    margin: 180px auto 90px;
+    padding: 0 50px;
+    height: 97px;
+    display: flex;
+    gap: 356px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer__address {
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.3px; 
+}
+
+.footer__address-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.footer__address-list-item {
+    list-style: none;
+}
+
+a.footer__address {
+    text-decoration: none;
+    border-bottom: solid 1px;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 18px;
+    line-height: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__links-list-item {
+    list-style: none;
+}
+
+a.footer__link {
+    text-decoration: none;
+    border-bottom: solid 1px; 
+}
+
+p.footer__link {                    /* отмена подчёркивания у первого пунка меню */
+    text-decoration: none;          /* найди решение убрать подчёркивание у активной ссылки */
+    border-bottom: none;            /* как указать, что ссылка активная? */
+}
+
+.footer__link_home {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.footer__social-icons{
+    width: 240px;
+    height: 48px;
+    background-image: url(./images/socials.svg);
+
+}
